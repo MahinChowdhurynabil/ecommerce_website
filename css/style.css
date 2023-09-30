@@ -1,10 +1,12 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: "Bricolage Grotesque", sans-serif;
   font-family: "Lato", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-
+/* ...........Navigation-1............ */
 .dishead {
   height: 45px;
   background: orange;
@@ -18,7 +20,7 @@
 }
 
 .tagline {
-  padding: 3px;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -31,6 +33,7 @@
   background: rgb(97%, 97%, 97%);
   padding: 14px;
 }
+/* ...........Navigation-2............ */
 .navbar-content {
   display: flex;
   margin: 0px auto;
@@ -38,6 +41,7 @@
   justify-content: space-between;
   color: #787878;
   font-size: 15px;
+  padding: 5px;
 }
 
 .navbar-content ul li {
@@ -48,16 +52,18 @@
 
 .navbar-content ul li a {
   margin: 20px;
+  padding: 5px;
   color: #787878;
   text-decoration: none;
   transition: 200ms;
 }
 
-ul li a:hover {
+.navbar-content ul li a:hover {
   color: rgb(16%, 15%, 91%);
 }
 
 .navbar-content ul li ul.sub-menu li {
+  display: block;
   margin: 5px 0px;
   padding: 5px 0px;
   justify-content: space-between;
@@ -65,84 +71,94 @@ ul li a:hover {
 
 .sub-menu i {
   float: right;
+  margin-right: 20px;
+}
+.view-icon {
+  width: 18px;
 }
 
-#feat {
-  margin: 5px;
-  float: ;
-}
-/* .fa-solid {
-  text-align: right;
-  float: right;
-} */
-
-ul.sub-menu {
+.sub-menu {
   display: none;
   position: absolute;
-  height: 10rem;
+  margin: 5px 0px;
+  height: 9rem;
   width: 15rem;
   border-radius: 5px;
   background: white;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  transition: 900ms;
   z-index: 999;
 }
 
-.navbar-content ul li:hover ul.sub-menu {
+.tooltip:hover .sub-menu {
   display: block;
 }
-
+/* ...........Navigation-2............ */
 .nav-2 {
   display: block;
   margin: 20px auto;
-  width: 91%;
+  width: 90%;
   margin-bottom: 5px;
 }
 
 .search-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .search-bar {
-  position: relative;
-  margin: 0px 30px;
+  margin: 0px 0px;
   padding: 5px;
 }
 .search-bar i {
   position: absolute;
-  color: blue;
+  color: rgb(16%, 15%, 91%);
   padding: 11px;
   font-size: 18px;
 }
 
-input {
-  padding: 10px 35px;
+.search-bar input {
+  padding: 11px 35px;
   font-size: 15px;
   border-radius: 5px;
   width: 32rem;
   border: 1px solid rgb(209 209 209);
+  box-sizing: border-box;
 }
 
-input[type="text"]:focus {
-  border: 1px solid blue;
+/* .search-bar input[type="text"]:focus {
+  border: 1px solid rgb(16%, 15%, 91%);
+  color: rgb(16%, 15%, 91%);
 }
 
 input:focus {
-  border: 1px solid blue;
+  border: 3px solid blue;
+  border-style: solid;
+  text-decoration-color: rgb(16%, 15%, 91%);
+  color: rgb(16%, 15%, 91%);
+} */
+::placeholder {
+  color: rgb(214, 214, 214);
 }
 
 .contact-menu {
   display: flex;
   cursor: pointer;
 }
+.contact-menu:hover .title {
+  transition: 250ms;
+  color: rgb(16%, 15%, 91%);
+}
 
 .menu-logo {
   font-size: 25px;
-  color: blue;
+  color: rgb(16%, 15%, 91%);
   padding: 5px;
 }
 
+.menu-logo :hover .title {
+  transition: 250ms;
+  color: rgb(16%, 15%, 91%);
+}
 .menu-detail {
   margin: 5px;
 }
@@ -150,35 +166,49 @@ input:focus {
   display: flex;
   cursor: pointer;
 }
+.menu-login:hover .title {
+  transition: 250ms;
+  color: rgb(16%, 15%, 91%);
+}
 .menu-cart {
   display: flex;
   cursor: pointer;
 }
-.title:hover {
-  color: blue;
+
+.menu-cart:hover .title {
+  transition: 250ms;
+  color: rgb(16%, 15%, 91%);
 }
 .title-sec-menu {
   color: #787878;
 }
+
+/* ...........................Navigation-3........................ */
 
 .nav-3 {
   border-bottom: 1.5px solid #c7c7c7;
 }
 
 .nav-3-menu {
-  display: block;
-  margin: 16px auto;
+  margin: 25px 60px;
   width: 93%;
 }
+
+.nav-3-menu ul {
+  display: block;
+  list-style: none;
+}
+
 .nav-3-menu ul li {
-  position: relative;
-  margin: 5px 0px;
+  display: inline-block;
+  padding: 10px;
+  margin: -10px 0px;
 }
 
 .nav-3-menu ul li a {
+  text-decoration: none;
   font-size: 18px;
-  font-size: bold;
-  color: rgb(2, 2, 42);
+  color: rgba(2, 2, 42, 0.863);
 }
 
 .nav-3-menu ul li a:hover {
@@ -190,72 +220,148 @@ input:focus {
 }
 
 .sub-menu-section {
-  border: 1px solid red;
-  height: 35vh;
-  width: 98vw;
-  display: block;
-  position: absolute;
-}
-/* .computers {
   display: flex;
-} */
-
-/* .computers ul {
-  display: block;
-  position: relative;
-  height: 35vh;
-  width: 98vw;
-  margin-left: -56px;
-  padding: 50px 10px;
-  border: 2px solid red;
-} */
-
-/* .computers ul li {
-  display: block;
-  padding: 15px;
-  margin: 0px 35px;
-  border-bottom: 1px solid #dbdbdb;
-} */
-.computers ul li a {
-  display: ;
-  font-size: 20px;
-  color: #3e3e3e;
-  border-bottom: 1px solid #787878;
-}
-
-/* #nav-3-icon {
-  font-size: 150px;
-} */
-
-.computer-sub-menu {
-  display: block;
-}
-.sub-menu-section {
-  display: flex;
-  position: absolute;
-  margin: 10px -50px;
+  position: fixed;
+  margin: 5px -79px;
+  height: 42vh;
+  width: 100vw;
   background: white;
+  justify-content: space-around;
 }
-/* .section-1 ul li {
- display: none;
- } */
 
-.section-1 {
-  border: 1px solid blue;
+#nav-3-icon {
+  font-size: 150px;
+  opacity: 0.05;
+}
+
+.section-1 ul {
+  margin: 20px 0;
 }
 .section-1 ul li {
   display: block;
-  border: 1px solid yellow;
+  font-size: 25px;
+  color: #3e3e3e;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 300;
+  padding: 15px;
+  margin: 0px 35px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.section-1 ul li a {
+  font-size: 20px;
+  color: #3e3e3e;
+}
+
+#noborder {
+  border: none;
 }
 
 .section-2 {
-  /* display: inline; */
-  border: 1px solid blue;
+  padding: 15px;
+  margin: 20px;
+}
+
+#nav-3-icon {
+  font-size: 200px;
+  opacity: 0.05;
 }
 .section-3 {
-  /* display: inline; */
-  border: 1px solid blue;
+  display: flex;
+  margin: 20px;
+  width: 28rem;
+  height: 15rem;
+  border-radius: 20px;
+  background: #f5f5f5;
 }
-/* .computers:hover .computer-sub-menu {
+.section-content {
+  margin: 50px 25px;
+}
+
+.section-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.section-tag {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.section-btn {
+  font-size: 16px;
+  width: 140px;
+  height: 45px;
+  margin: 5px;
+  font-weight: bold;
+  background: rgb(16%, 15%, 91%);
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+}
+
+.section-btn:hover {
+  background: rgb(22, 18, 232);
+}
+.section-photo img {
+  position: fixed;
+  padding: 40px;
+  width: 150px;
+}
+
+#computer-sub-menu {
+  display: none;
+}
+.computers:hover #computer-sub-menu {
   display: block;
-} */
+}
+
+#smartphones-sub-menu {
+  display: none;
+}
+.smartphones:hover #smartphones-sub-menu {
+  margin-left: -152px;
+  display: block;
+}
+
+#watches-sub-menu {
+  display: none;
+}
+
+.watches:hover #watches-sub-menu {
+  margin-left: -325px;
+  display: block;
+}
+
+#tv-sub-menu {
+  display: none;
+}
+
+.tv:hover #tv-sub-menu {
+  margin-left: -465px;
+  display: block;
+}
+
+#tables-sub-menu {
+  display: none;
+}
+
+.tables:hover #tables-sub-menu {
+  margin-left: -612px;
+  display: block;
+}
+
+#games-sub-menu {
+  display: none;
+}
+
+.games:hover #games-sub-menu {
+  margin-left: -728px;
+  display: block;
+}
