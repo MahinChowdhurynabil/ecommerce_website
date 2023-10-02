@@ -494,7 +494,7 @@ button a {
   margin: 0px auto;
   width: 90%;
 }
-.section-title {
+.forth-section-title {
   padding: 80px;
   margin-bottom: -50px;
   text-align: center;
@@ -655,4 +655,23 @@ button a {
 #product-3rd {
   width: 300px;
   height: 460px;
+}
+
+.section-slogan {
+  margin: 10px;
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(4%, 10%, 28%);
+}
+
+.feel-the-sound {
+  position: absolute;
+  margin: 90px;
+  margin-left: 660px;
+}
+#blank {
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
 }
