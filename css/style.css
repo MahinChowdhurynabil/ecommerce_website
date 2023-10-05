@@ -295,6 +295,7 @@ input:focus {
 }
 
 .section-btn {
+  position: absolute;
   font-size: 16px;
   width: 140px;
   height: 45px;
@@ -814,6 +815,7 @@ h2 {
 
 .brands{
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   margin: 20px auto;
   justify-content: space-around;
@@ -823,9 +825,9 @@ h2 {
   padding: 10px 5px;
   margin: 15px;
   height: 80px;
-  width: 270px;
+  width: 190px;
   transition: 250ms;
-  text-align: center; 
+  text-align: center;
 }
 
 .brand-names img{
@@ -839,12 +841,13 @@ h2 {
 
 .eightth-section-content{
   display: flex;
-  margin: 40px auto;
+  flex-wrap: wrap;
+  margin: 60px auto;
   width: 90%;
 }
 
 #eightth-section-part-one{
-  width: 600px;
+  width: 400px;
 
 }
 
@@ -852,7 +855,7 @@ h2 {
   padding: 22px;
   margin: 15px;
   height: 225px;
-  width: 400px;
+  width: 280px;
 }
 
 #eightth-section-part-one h1{
@@ -877,12 +880,60 @@ h2 {
 /* ...........................form Section........................ */
 
 .newsletter{
-
   background: rgb(13, 13, 13);
-  background-image: url("../img/pexels-ketut-subiyanto-4307850.jpg" );
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.7;
-  
   height: 600px;
+  font-family: "Ubuntu", sans-serif;
+  /* color: white; */
+}
+
+.newsletter img{
+  width: 100%;
+  opacity: .6;
+  
+}
+
+.form-section{
+  position: absolute;
+ 
+}
+
+.form-on-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -540px 85px;
+  position: absolute;
+  z-index: 333;
+  color: white;
+}
+
+.form-content h4{
+  font-weight: 100;
+  margin: 5px 0px;
+}
+.form-content h1{
+  font-size: 40px;
+  margin: 5px 0px;
+}
+.options{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cont{
+  margin: 25px 0px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.cont i{
+  color: rgb(16%, 15%, 91%);
+}
+
+#newsletter-form{
+  display: block;
+  margin: -120px auto;
+  height: 350px;
+  width: 610px;
+  border-radius: 20px;
+  background: white;
+
 }
