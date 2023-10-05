@@ -1,647 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&family=Ubuntu&display=swap"
+			rel="stylesheet"
+		/>
+		<title>BeStore</title>
+	</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&family=Ubuntu&display=swap"
-            rel="stylesheet">
-        <title>BeStore</title>
-    </head>
+	<body>
+		<div class="dishead">
+				<p>Like us on Facebook and receive a 20% discount</p>
+		</div>
+		<div class="navbar">
+				<div class="nav-1">
+						<div class="navbar-content">
+								<nav class="tagline">We ship packages within 24 hours of ordering</nav>
+								<ul>
+										<li class="tooltip"><a href="#" id="features-menu">Features<i class="fa-solid fa-chevron-down">
+														</i></a>
+												<ul class="sub-menu">
+														<li><a href="">Shop Layouts<i id="feat" class="fa-solid fa-chevron-right"></i></a></li>
+														<li><a href="">Single Product Style<i id="feat"
+																				class="fa-solid fa-chevron-right"></i></a>
+														</li>
+														<li><a href="">Product Gallery Styles<i class="fa-solid fa-chevron-right"></i></a>
+														</li>
+														<li><a href="">Overlay Styles<i class="fa-solid fa-chevron-right"></i></a></li>
+												</ul>
+										</li>
+										<li><a href="#">About</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Term of use</a></li>
+										<li><a href="#">wishlist</a></li>
+								</ul>
+						</div>
+				</div>
+				<div class="nav-2">
+						<div class="search-menu">
+								<div class="logo"><img src="./img/Logo.svg" alt=""></div>
+								<div class="search-bar"><i class="fa-solid fa-magnifying-glass"></i><input type="text" name=""
+												id="searchbar" placeholder="Enter your search"></div>
+								<div class="contact-menu">
+										<div class="menu-logo"><i class="fa-solid fa-headset"></i></div>
+										<div class="menu-detail">
+												<div class="title">Support 24/7</div>
+												<div class="title-sec-menu">+61 (0) 383 766 284</div>
+										</div>
+								</div>
+								<div class="menu-login">
+										<div class="menu-logo"><i class="fa-regular fa-user"></i></div>
+										<div class="menu-detail">
+												<div class="title">Login</div>
+												<div class="title-sec-menu">or register</div>
+										</div>
+								</div>
+								<div class="menu-cart">
+										<div class="menu-logo"><i class="fa-solid fa-cart-shopping"></i></div>
+										<div class="menu-detail">
+												<div class="title">Cart</div>
+												<div class="title-sec-menu">cart</div>
+										</div>
+								</div>
+						</div>
+				</div>
 
-    <body>
-        <div class="dishead">
-            <p>Like us on Facebook and receive a 20% discount</p>
-        </div>
-        <div class="navbar">
-            <div class="nav-1">
-                <div class="navbar-content">
-                    <nav class="tagline">We ship packages within 24 hours of ordering</nav>
-                    <ul>
-                        <li class="tooltip"><a href="#" id="features-menu">Features<i class="fa-solid fa-chevron-down">
-                                </i></a>
-                            <ul class="sub-menu">
-                                <li><a href="">Shop Layouts<i id="feat" class="fa-solid fa-chevron-right"></i></a></li>
-                                <li><a href="">Single Product Style<i id="feat"
-                                            class="fa-solid fa-chevron-right"></i></a>
-                                </li>
-                                <li><a href="">Product Gallery Styles<i class="fa-solid fa-chevron-right"></i></a>
-                                </li>
-                                <li><a href="">Overlay Styles<i class="fa-solid fa-chevron-right"></i></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Term of use</a></li>
-                        <li><a href="#">wishlist</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="nav-2">
-                <div class="search-menu">
-                    <div class="logo"><img src="./img/Logo.svg" alt=""></div>
-                    <div class="search-bar"><i class="fa-solid fa-magnifying-glass"></i><input type="text" name=""
-                            id="searchbar" placeholder="Enter your search"></div>
-                    <div class="contact-menu">
-                        <div class="menu-logo"><i class="fa-solid fa-headset"></i></div>
-                        <div class="menu-detail">
-                            <div class="title">Support 24/7</div>
-                            <div class="title-sec-menu">+61 (0) 383 766 284</div>
-                        </div>
-                    </div>
-                    <div class="menu-login">
-                        <div class="menu-logo"><i class="fa-regular fa-user"></i></div>
-                        <div class="menu-detail">
-                            <div class="title">Login</div>
-                            <div class="title-sec-menu">or register</div>
-                        </div> 
-                    </div> 
-                    <div class="menu-cart">
-                        <div class="menu-logo"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <div class="menu-detail">
-                            <div class="title">Cart</div>
-                            <div class="title-sec-menu">cart</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<div class="nav-3">
+						<div class="nav-3-menu">
+								<ul>
+										<li id="sub-nav-3" class="computers">
+												<a href=""><i id="feat" class="fa-solid fa-laptop"></i>
+														Computers <i class="fa-solid fa-chevron-down">
+														</i></a>
+												<div class="third-sub-menu" id="computer-sub-menu">
+														<div class="sub-menu-section">
+																<div class="section-1">
+																		<ul>
+																				<li><a href="">PC’s</a></li>
+																				<li><a href="">Laptops</a></li>
+																				<li><a href="">Notebooks</a></li>
+																				<li id="noborder"><a href="">PC Accessories</a></li>
+																		</ul>
+																</div>
+																<div class="section-2"><i id="nav-3-icon" class="fa-solid fa-laptop"></i></div>
+																<div class="section-3">
+																		<div class="section-content">
+																				<div class="section-title">Computer</div>
+																				<div class="section-tag">Customers choice
+																				</div>
+																				<button class="section-btn"><a href="">Find out</a></button>
+																		</div>
+																		<div class="section-photo"><img src="./img/products photo/products (1).webp"alt=""></div>
+																</div>
+														</div>
 
-            <div class="nav-3">
-                <div class="nav-3-menu">
-                    <ul>
-                        <li id="sub-nav-3" class="computers">
-                            <a href=""><i id="feat" class="fa-solid fa-laptop"></i>
-                                Computers <i class="fa-solid fa-chevron-down">
-                                </i></a>
+																<li id="sub-nav-3" class="smartphones"><a href=""><i id="feat" class="fa-solid fa-mobile-screen"></i>
+														SmartPhones <i class="fa-solid fa-chevron-down"></i></a>
+												 <div class="third-sub-menu" id="smartphones-sub-menu">
+														<div class="sub-menu-section">
+																<div class="section-1">
+																		<ul>
+																				<li><a href="">5G Phones
+																						</a></li>
+																				<li><a href="">Phone accessories
+																						</a></li>
+																				<li><a href="">Prepaid phones
+																						</a></li>
+																				<li id="noborder"><a href="">Unlocked phones</a></li>
+																		</ul>
+																</div>
+																<div class="section-2">
+																		<i id="nav-3-icon" class="fa-solid fa-mobile-screen"></i>
+																</div>
+																<div class="section-3">
+																		<div class="section-content">
+																				<div class="section-title">SmartPhones</div>
+																				<div class="section-tag">Our choice
+																				</div>
+																				<button class="section-btn"><a href="">Find out</a></button>
+																		</div>
+																		<div class="section-photo"><img src="./img/products photo/products (6).webp"
+																						alt=""></div>
+																</div>
+														</div>
+														</div></li>
 
-                            <div class="third-sub-menu" id="computer-sub-menu">
-                                <div class="sub-menu-section">
-                                    <div class="section-1">
-                                        <ul>
-                                            <li><a href="">PC’s</a></li>
-                                            <li><a href="">Laptops</a></li>
-                                            <li><a href="">Notebooks</a></li>
-                                            <li id="noborder"><a href="">PC Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="section-2"><i id="nav-3-icon" class="fa-solid fa-laptop"></i>
-                                    </div>
-                                    <div class="section-3">
-                                        <div class="section-content">
-                                            <div class="section-title">Computer</div>
-                                            <div class="section-tag">Customers choice
-                                            </div>
-                                            <button class="section-btn"><a href="">Find out</a></button>
-                                        </div>
-                                        <div class="section-photo"><img src="./img/products photo/products (1).webp"
-                                                alt=""></div>
+										<li id="sub-nav-3" class="watches">
+												<a href=""><i id="feat" class="fa-regular fa-clock"></i>
+														Watches <i class="fa-solid fa-chevron-down"></i></a>
+												<div class="third-sub-menu" id="watches-sub-menu">
+														<div class="sub-menu-section">
+																<div class="section-1">
+																		<ul>
+																				<li><a href="">Fitness trackers
+																						</a></li>
+																				<li><a href="">Smart watches
+																						</a></li>
+																				<li id="noborder"><a href="">Smartwatch accessories</a></li>
+																		</ul>
+																</div>
+																<div class="section-2"><i id="nav-3-icon" class="fa-regular fa-clock"></i>
+																</div>
+																<div class="section-3">
+																		<div class="section-content">
+																				<div class="section-title">Watches</div>
+																				<div class="section-tag">Tech Award
+																				</div>
+																				<button class="section-btn"><a href="">Find out</a></button>
+																		</div>
+																		<div class="section-photo"><img src="./img/products photo/products (5).webp"
+																						alt=""></div>
 
-                                    </div>
-                                </div>
-                        </li>
+																</div>
+														</div>
+												</div></li>
 
-                        <li id="sub-nav-3" class="smartphones"><a href=""><i id="feat" class="fa-solid fa-mobile-screen"></i>
-                                SmartPhones <i class="fa-solid fa-chevron-down"></i></a>
-                            <div class="third-sub-menu" id="smartphones-sub-menu">
-                                <div class="sub-menu-section">
-                                    <div class="section-1">
-                                        <ul>
-                                            <li><a href="">5G Phones
-                                                </a></li>
-                                            <li><a href="">Phone accessories
-                                                </a></li>
-                                            <li><a href="">Prepaid phones
-                                                </a></li>
-                                            <li id="noborder"><a href="">Unlocked phones</a></li>
+										<li id="sub-nav-3" class="tv"><a href=""><i id="feat" class="fa-solid fa-tv"></i> TV/Audio <i
+																class="fa-solid fa-chevron-down"></i></a>
+												<div class="third-sub-menu" id="tv-sub-menu">
+														<div class="sub-menu-section">
+																<div class="section-1">
+																		<ul>
+																				<li><a href="">Earphones
+																						</a></li>
+																				<li><a href="">Headphones
+																						</a></li>
+																				<li><a href="">Smart TV
+																						</a></li>
+																				<li id="noborder"><a href="">TV accessories</a></li>
+																		</ul>
+																</div>
+																<div class="section-2"><i id="nav-3-icon" class="fa-solid fa-tv"></i>
+																</div>
+																<div class="section-3">
+																		<div class="section-content">
+																				<div class="section-title">TV/Audio</div>
+																				<div class="section-tag">BestSeller
+																				</div>
+																				<button class="section-btn"><a href="">Find out</a></button>
+																		</div>
+																		<div class="section-photo"><img src="./img/products photo/products (2).webp"
+																						alt=""></div>
 
-                                        </ul>
-                                    </div>
-                                    <div class="section-2">
-                                        <i id="nav-3-icon" class="fa-solid fa-mobile-screen"></i>
-                                    </div>
-                                    <div class="section-3">
-                                        <div class="section-content">
-                                            <div class="section-title">SmartPhones</div>
-                                            <div class="section-tag">Our choice
-                                            </div>
-                                            <button class="section-btn"><a href="">Find out</a></button>
-                                        </div>
-                                        <div class="section-photo"><img src="./img/products photo/products (6).webp"
-                                                alt=""></div>
+																</div>
+														</div>
+												</div></li>
 
-                                    </div>
-                                </div>
-                                </div>
-                        </li>
-                        
-                        <li id="sub-nav-3" class="watches">
-                            <a href=""><i id="feat" class="fa-regular fa-clock"></i>
-                                Watches <i class="fa-solid fa-chevron-down"></i></a>
-                            <div class="third-sub-menu" id="watches-sub-menu">
-                                <div class="sub-menu-section">
-                                    <div class="section-1">
-                                        <ul>
-                                            <li><a href="">Fitness trackers
-                                                </a></li>
-                                            <li><a href="">Smart watches
-                                                </a></li>
-                                            <li id="noborder"><a href="">Smartwatch accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="section-2"><i id="nav-3-icon" class="fa-regular fa-clock"></i>
-                                    </div>
-                                    <div class="section-3">
-                                        <div class="section-content">
-                                            <div class="section-title">Watches</div>
-                                            <div class="section-tag">Tech Award
-                                            </div>
-                                            <button class="section-btn"><a href="">Find out</a></button>
-                                        </div>
-                                        <div class="section-photo"><img src="./img/products photo/products (5).webp"
-                                                alt=""></div>
+													<li id="sub-nav-3" class="tables"><a href=""><i id="feat"
+																class="fa-solid fa-tablet-screen-button"></i>Tables<i class="fa-solid fa-chevron-down"></i></a>
+												 <div class="third-sub-menu" id="tables-sub-menu">
+														<div class="sub-menu-section">
+																<div class="section-1">
+																		<ul>
+																				<li><a href="">Ebook-Readers
+																						</a></li>
+																				<li><a href="">Kids Tablets
+																						</a></li>
+																				<li id="noborder"><a href="">Tablet accessories</a></li>
+																		</ul>
+																</div>
+																<div class="section-2"><i id="nav-3-icon"
+																				class="fa-solid fa-tablet-screen-button"></i>
+																</div>
+																<div class="section-3">
+																		<div class="section-content">
+																				<div class="section-title">Tablets</div>
+																				<div class="section-tag">Tech Awards
+																				</div>
+																				<button class="section-btn"><a href="">Find out</a></button>
+																		</div>
+																		<div class="section-photo"><img src="./img/products photo/products (4).webp"
+																						alt=""></div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="sub-nav-3" class="tv"><a href=""><i id="feat" class="fa-solid fa-tv"></i> TV/Audio <i
-                                    class="fa-solid fa-chevron-down"></i></a>
-                            <div class="third-sub-menu" id="tv-sub-menu">
-                                <div class="sub-menu-section">
-                                    <div class="section-1">
-                                        <ul>
-                                            <li><a href="">Earphones
-                                                </a></li>
-                                            <li><a href="">Headphones
-                                                </a></li>
-                                            <li><a href="">Smart TV
-                                                </a></li>
-                                            <li id="noborder"><a href="">TV accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="section-2"><i id="nav-3-icon" class="fa-solid fa-tv"></i>
-                                    </div>
-                                    <div class="section-3">
-                                        <div class="section-content">
-                                            <div class="section-title">TV/Audio</div>
-                                            <div class="section-tag">BestSeller
-                                            </div>
-                                            <button class="section-btn"><a href="">Find out</a></button>
-                                        </div>
-                                        <div class="section-photo"><img src="./img/products photo/products (2).webp"
-                                                alt=""></div>
+																</div>
+														</div></li>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="sub-nav-3" class="tables"><a href=""><i id="feat"
-                                    class="fa-solid fa-tablet-screen-button"></i>Tables<i class="fa-solid fa-chevron-down"></i></a>
-                            <div class="third-sub-menu" id="tables-sub-menu">
-                                <div class="sub-menu-section">
-                                    <div class="section-1">
-                                        <ul>
-                                            <li><a href="">Ebook-Readers
-                                                </a></li>
-                                            <li><a href="">Kids Tablets
-                                                </a></li>
-                                            <li id="noborder"><a href="">Tablet accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="section-2"><i id="nav-3-icon"
-                                            class="fa-solid fa-tablet-screen-button"></i>
-                                    </div>
-                                    <div class="section-3">
-                                        <div class="section-content">
-                                            <div class="section-title">Tablets</div>
-                                            <div class="section-tag">Tech Awards
-                                            </div>
-                                            <button class="section-btn"><a href="">Find out</a></button>
-                                        </div>
-                                        <div class="section-photo"><img src="./img/products photo/products (4).webp"
-                                                alt=""></div>
+														<li id="sub-nav-3" class="games"><a href=""><i id="feat" class="fa-solid fa-gamepad"></i> Games
+														<i class="fa-solid fa-chevron-down"></i></a>
+												<div class="third-sub-menu" id="games-sub-menu">
+														<div class="sub-menu-section">
+																<div class="section-1">
+																		<ul>
+																				<li><a href="">Audio
 
-                                    </div>
-                                </div>
-                        </li>
-                        <li id="sub-nav-3" class="games"><a href=""><i id="feat" class="fa-solid fa-gamepad"></i> Games
-                                <i class="fa-solid fa-chevron-down"></i></a>
-                            <div class="third-sub-menu" id="games-sub-menu">
-                                <div class="sub-menu-section">
-                                    <div class="section-1">
-                                        <ul>
-                                            <li><a href="">Audio
+																						</a></li>
+																				<li><a href="">Gaming accesories
 
-                                                </a></li>
-                                            <li><a href="">Gaming accesories
+																						</a></li>
+																				<li><a href="">Gaming devices
+																						</a></li>
+																				<li id="noborder"><a href="">Gaming displays
+																						</a></li>
+																		</ul>
+																</div>
+																<div class="section-2"><i id="nav-3-icon" class="fa-solid fa-gamepad"></i>
+																</div>
+																<div class="section-3">
+																		<div class="section-content">
+																				<div class="section-title">Gaming</div>
+																				<div class="section-tag">Top Product
+																				</div>
+																				<button class="section-btn"><a href="">Find out</a></button>
+																		</div>
+																		<div class="section-photo"><img src="./img/products photo/products (3).webp"
+																						alt=""></div>
 
-                                                </a></li>
-                                            <li><a href="">Gaming devices
-                                                </a></li>
-                                            <li id="noborder"><a href="">Gaming displays
-                                                </a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="section-2"><i id="nav-3-icon" class="fa-solid fa-gamepad"></i>
-                                    </div>
-                                    <div class="section-3">
-                                        <div class="section-content">
-                                            <div class="section-title">Gaming</div>
-                                            <div class="section-tag">Top Product
-                                            </div>
-                                            <button class="section-btn"><a href="">Find out</a></button>
-                                        </div>
-                                        <div class="section-photo"><img src="./img/products photo/products (3).webp"
-                                                alt=""></div>
+																</div>
+														</div></li>
 
-                                    </div>
-                                </div>
-                        </li>
-                        <li id="sub-nav-3" class="view-all"><a href=""><img src="./img/fourcircles_116453.png" alt=""
-                                    class="view-icon" id="feat">view-all<i class="fa-solid fa-chevron-down"></i></a>
-                        </li>
+										<li id="sub-nav-3" class="view-all"><a href=""><img src="./img/fourcircles_116453.png" alt=""
+																class="view-icon" id="feat">view-all<i class="fa-solid fa-chevron-down"></i></a></li>
+								</ul>
+						</div>
+				</div>
+		</div>
+		</div>
+		</div>
 
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        <!-- ...........................body........................ -->
-        <div class="first-section"><img src="./img/big-sale-discounts-products.jpg" alt="">
-            <button class="btn" id="fist-btn">Buy Now</button>
-        </div>
+		<!-- ...........................body........................ -->
 
-        <div class="second-section">
-            <div class="service-highlight">
-                <div class="service-highlight-icon"><i class="fa-solid fa-shop"></i></div>
-                <div class="service-highlight-title">Free Shipping</div>
-                <div class="service-highlight-tag">For all orders over $200</div>
-            </div>
-            <div class="service-highlight">
-                <div class="service-highlight-icon"><i class="fa-solid fa-chart-area"></i></div>
-                <div class="service-highlight-title">Daily Promotions</div>
-                <div class="service-highlight-tag">Discount up to 70%</div>
-            </div>
-            <div class="service-highlight">
-                <div class="service-highlight-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                <div class="service-highlight-title">Free returns
-                </div>
-                <div class="service-highlight-tag">Return for up to 7 days</div>
-            </div>
-            <div class="service-highlight">
-                <div class="service-highlight-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
-                <div class="service-highlight-title">Secure payments
-                </div>
-                <div class="service-highlight-tag">Security guarantee</div>
-            </div>
-            <div class="service-highlight">
-                <div class="service-highlight-icon"><i class="fa-solid fa-gift"></i></div>
-                <div class="service-highlight-title">Gifts for members
-                </div>
-                <div class="service-highlight-tag">Bonuses for members</div>
-            </div>
-        </div>
+		<div class="first-section">
+			<img src="./img/big-sale-discounts-products.jpg" alt="" />
+			<button class="btn" id="fist-btn">Buy Now</button>
+		</div>
 
-        <!-- ...........................Third Section........................ -->
-        <div class="section-third">
-            <div class="third-section-content">
-                <div class="product-feature">
-                    <div class="product-img"><img src="./img/18899269 copy.jpg" alt="Smartwatch"></div>
-                    <div class="details">
-                        <div class="product-header">Our recommendation</div>
-                        <div class="product-title">BeWatch GT</div>
-                        <div class="product-tag">Dolor dictumst pretium</div>
-                        <button class="btn"><a href="">Buy Now</a></button>
-                    </div>
-                </div>
-                <div class="product-feature">
-                    <div class="product-img"><img src="./img/technology-millennials.jpg" alt="girlwearing Headphone"
-                            id="product-img-two"></div>
-                    <div class="details">
-                        <div class="product-header">Our recommendation</div>
-                        <div class="product-title">BeSound</div>
-                        <div class="product-tag">Dolor dictumst pretium</div>
-                        <button class="btn" id=""><a href="">Products</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ...........................forth Section........................ -->
+		<div class="second-section">
+			<div class="service-highlight">
+				<div class="service-highlight-icon">
+					<i class="fa-solid fa-shop"></i>
+				</div>
+				<div class="service-highlight-title">Free Shipping</div>
+				<div class="service-highlight-tag">For all orders over $200</div>
+			</div>
+			<div class="service-highlight">
+				<div class="service-highlight-icon">
+					<i class="fa-solid fa-chart-area"></i>
+				</div>
+				<div class="service-highlight-title">Daily Promotions</div>
+				<div class="service-highlight-tag">Discount up to 70%</div>
+			</div>
+			<div class="service-highlight">
+				<div class="service-highlight-icon">
+					<i class="fa-solid fa-truck-fast"></i>
+				</div>
+				<div class="service-highlight-title">Free returns</div>
+				<div class="service-highlight-tag">Return for up to 7 days</div>
+			</div>
+			<div class="service-highlight">
+				<div class="service-highlight-icon">
+					<i class="fa-solid fa-money-check-dollar"></i>
+				</div>
+				<div class="service-highlight-title">Secure payments</div>
+				<div class="service-highlight-tag">Security guarantee</div>
+			</div>
+			<div class="service-highlight">
+				<div class="service-highlight-icon">
+					<i class="fa-solid fa-gift"></i>
+				</div>
+				<div class="service-highlight-title">Gifts for members</div>
+				<div class="service-highlight-tag">Bonuses for members</div>
+			</div>
+		</div>
 
-        <div class="forth-section">
-            <div class="forth-section-content">
-                <div class="forth-section-first-content">
-                    <div class="forth-section-title">Top rated products</div>
-                    <div class="section-sub-title">Best Choice</div>
-                    <div class="product-showcase">
-                        <div class="product">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (5).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">SmartWatch</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$100.00 – $180.00</div>
-                        </div>
-                        <div class="product">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (7).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">SmartPhones</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$$2,250.00 – $2,550.00</div>
-                        </div>
-                        <div class="product">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (1).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">Notebook</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$$2,250.00 – $2,550.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="forth-section-second-content">
-                    <div class="first-part">
-                        <img src="./img/apple_iphone_12_floating.png" alt="">
+		<!-- ...........................Third Section........................ -->
+		<div class="section-third">
+			<div class="third-section-content">
+				<div class="product-feature">
+					<div class="product-img">
+						<img src="./img/18899269 copy.jpg" alt="Smartwatch" />
+					</div>
+					<div class="details">
+						<div class="product-header">Our recommendation</div>
+						<div class="product-title">BeWatch GT</div>
+						<div class="product-tag">Dolor dictumst pretium</div>
+						<button class="btn"><a href="">Buy Now</a></button>
+					</div>
+				</div>
+				<div class="product-feature">
+					<div class="product-img">
+						<img
+							src="./img/technology-millennials.jpg"
+							alt="girlwearing Headphone"
+							id="product-img-two"
+						/>
+					</div>
+					<div class="details">
+						<div class="product-header">Our recommendation</div>
+						<div class="product-title">BeSound</div>
+						<div class="product-tag">Dolor dictumst pretium</div>
+						<button class="btn" id=""><a href="">Products</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ...........................forth Section........................ -->
 
-                    </div>
-                    <div class="second-part">
-                        <div class="offer">Special offer</div>
-                        <div class="product-name">I phone 12</div>
-                        <div class="offer-time">
-                            <div class="time-container">
-                                <div class="time-1">00</div>
-                                <div class="time-2">days</div>
-                            </div>
+		<div class="forth-section">
+			<div class="forth-section-content">
+				<div class="forth-section-first-content">
+					<div class="forth-section-title">Top rated products</div>
+					<div class="section-sub-title">Best Choice</div>
+					<div class="product-showcase">
+						<div class="product">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (5).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">SmartWatch</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">$100.00 – $180.00</div>
+						</div>
+						<div class="product">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (7).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">SmartPhones</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$$2,250.00 – $2,550.00
+							</div>
+						</div>
+						<div class="product">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (1).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">Notebook</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$$2,250.00 – $2,550.00
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="forth-section-second-content">
+					<div class="first-part">
+						<img src="./img/apple_iphone_12_floating.png" alt="" />
+					</div>
+					<div class="second-part">
+						<div class="offer">Special offer</div>
+						<div class="product-name">I phone 12</div>
+						<div class="offer-time">
+							<div class="time-container">
+								<div class="time-1">00</div>
+								<div class="time-2">days</div>
+							</div>
 
-                            <div class="time-container">
-                                <div class="time-1">00</div>
-                                <div class="time-2">hours</div>
-                            </div>
-                            <div class="time-container">
-                                <div class="time-1">00</div>
-                                <div class="time-2">minutes</div>
-                            </div>
-                            <div class="time-container">
-                                <div class="time-1">00</div>
-                                <div class="time-2">seconds</div>
-                            </div>
-                        </div>
-                        <div class="price">Iphone 12 pro <br> $299 USD</div>
-                        <button class="btn" id="iphone-btn">Buy Now</button>
-                    </div>
+							<div class="time-container">
+								<div class="time-1">00</div>
+								<div class="time-2">hours</div>
+							</div>
+							<div class="time-container">
+								<div class="time-1">00</div>
+								<div class="time-2">minutes</div>
+							</div>
+							<div class="time-container">
+								<div class="time-1">00</div>
+								<div class="time-2">seconds</div>
+							</div>
+						</div>
+						<div class="price">
+							Iphone 12 pro <br />
+							$299 USD
+						</div>
+						<button class="btn" id="iphone-btn">Buy Now</button>
+					</div>
+				</div>
+				<div class="forth-section-third-content">
+					<div class="forth-section-title">Our newest products</div>
+					<div class="section-sub-title">Best Choice</div>
+					<div class="product-showcase">
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (1).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">Notebook</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">$100.00 – $180.00</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (8).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">Headphone</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$2,250.00 – $2,550.00
+							</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (6).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">SmartPhones</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$2,250.00 – $2,550.00
+							</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (9).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">SmartWatch</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">$100.00 – $180.00</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (10).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">Tablets</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$2,250.00 – $2,550.00
+							</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
 
-                </div>
-                <div class="forth-section-third-content">
-                    <div class="forth-section-title">Our newest products</div>
-                    <div class="section-sub-title">Best Choice</div>
-                    <div class="product-showcase">
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (1).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">Notebook</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$100.00 – $180.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (8).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">Headphone</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (6).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">SmartPhones</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (9).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">SmartWatch</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$100.00 – $180.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (10).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">Tablets</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (9).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">SmartWatch 2</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$2,250.00 – $2,550.00
+							</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (11).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">TV</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$5,300.00 – $6,300.00
+							</div>
+						</div>
+						<div class="product" id="product-2nd">
+							<div class="onsale">ON SALE</div>
+							<div class="forth-section-product-img">
+								<img src="./img/products photo/products (12).webp" alt="" />
+							</div>
+							<div class="forth-section-product-title">PCI</div>
+							<div class="forth-section-product-rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<div class="forth-section-product-price">
+								$2,250.00 – $2,550.00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (9).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">SmartWatch 2</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (11).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">TV</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$5,300.00 – $6,300.00</div>
-                        </div>
-                        <div class="product" id="product-2nd">
-                            <div class="onsale">ON SALE</div>
-                            <div class="forth-section-product-img"><img src="./img/products photo/products (12).webp"
-                                    alt=""></div>
-                            <div class="forth-section-product-title">PCI</div>
-                            <div class="forth-section-product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- ...........................Fifth Section........................ -->
 
-        <!-- ...........................Fifth Section........................ -->
+		<div class="fifth-section">
+			<div class="feel-the-sound">
+				<div class="section-slogan">Feel the <br />sound</div>
+				<div class="section-slogan" id="blank">Category products</div>
+			</div>
+			<div class="product-showcase" id="fifth-section-products">
+				<div class="product" id="product-3rd">
+					<div class="onsale">ON SALE</div>
+					<div class="forth-section-product-img">
+						<img src="./img/products photo/products (1).webp" alt="" />
+					</div>
+					<div class="forth-section-product-title">Notebook</div>
+					<div class="forth-section-product-rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<div class="forth-section-product-price">$100.00 – $180.00</div>
+				</div>
+				<div class="product" id="product-3rd">
+					<div class="onsale">ON SALE</div>
+					<div class="forth-section-product-img">
+						<img src="./img/products photo/products (8).webp" alt="" />
+					</div>
+					<div class="forth-section-product-title">Headphone</div>
+					<div class="forth-section-product-rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
+				</div>
+			</div>
+		</div>
 
-        <div class="fifth-section">
-            <div class="feel-the-sound">
-                <div class="section-slogan">Feel the <br>sound</div>
-                <div class="section-slogan" id="blank">Category products</div>
-            </div>
-            <div class="product-showcase" id="fifth-section-products">
+		<!-- ...........................Sixth Section........................ -->
 
-                <div class="product" id="product-3rd">
-                    <div class="onsale">ON SALE</div>
-                    <div class="forth-section-product-img"><img src="./img/products photo/products (1).webp" alt="">
-                    </div>
-                    <div class="forth-section-product-title">Notebook</div>
-                    <div class="forth-section-product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="forth-section-product-price">$100.00 – $180.00</div>
-                </div>
-                <div class="product" id="product-3rd">
-                    <div class="onsale">ON SALE</div>
-                    <div class="forth-section-product-img"><img src="./img/products photo/products (8).webp" alt="">
-                    </div>
-                    <div class="forth-section-product-title">Headphone</div>
-                    <div class="forth-section-product-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="forth-section-product-price">$2,250.00 – $2,550.00</div>
-                </div>
-            </div>
-        </div>
+		<div class="sixth-section">
+			<div class="section-sub-title" id="sixth-section-first-id">
+				Why Our Shop?
+			</div>
+			<div class="forth-section-title" id="sixth-section-second-id">
+				New <span class="title-span">BePhone Pro.</span>
+			</div>
+			<div class="sixth-section-contents">
+				<div class="sixth-section-boxes">
+					<div class="section-box">
+						<div class="section-box-content">
+							<h2>Guarantee of originality</h2>
+							<p class="pera">
+								Sapien fermentum diam egestas tellus commodo. Scelerisque.
+							</p>
+							<a href="" id="color">Show me products</a>
+						</div>
+						<div class="section-box-content" id="section-box-content">
+							<img src="./img/products photo/products (13).webp" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="sixth-section-boxes">
+					<div class="section-box">
+						<div class="section-box-content">
+							<h2>Safe payments</h2>
+							<p class="pera">
+								Sapien fermentum diam egestas tellus commodo. Scelerisque.
+							</p>
+							<a href="" id="color">Show me products</a>
+						</div>
+						<div class="section-box-content" id="section-box-content">
+							<img src="./img/products photo/products (14).webp" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- ...........................Sixth Section........................ -->
+		<!-- ...........................Seventh Section........................ -->
 
-        <div class="sixth-section">
-            <div class="section-sub-title" id="sixth-section-first-id">Why Our Shop?</div>
-            <div class="forth-section-title" id="sixth-section-second-id">New <span class="title-span">BePhone Pro.</span></div>
-            <div class="sixth-section-contents">
-                <div class="sixth-section-boxes">
-                    <div class="section-box">
-                        <div class="section-box-content">
-                            <h2>Guarantee of originality</h2>
-                            <p class="pera">Sapien fermentum diam egestas tellus commodo. Scelerisque.</p>
-                            <a href="" id="color">Show me products</a>
-                        </div>
-                        <div class="section-box-content" id="section-box-content"><img src="./img/products photo/products (13).webp" alt=""></div>
-                    </div>
-                </div>
-                <div class="sixth-section-boxes">
-                    <div class="section-box">
-                        <div class="section-box-content">
-                            <h2>Safe payments</h2>
-                            <p class="pera">Sapien fermentum diam egestas tellus commodo. Scelerisque.</p>
-                            <a href="" id="color">Show me products</a>
-                        </div>
-                        <div class="section-box-content" id="section-box-content"><img src="./img/products photo/products (14).webp" alt=""></div>
-                </div>
-                </div>
-            </div>
-        </div>
+		<div class="seventh-section">
+			<div class="forth-section-title" id="">
+				We offers you convenient <br />
+				shopping experience at any scale
+			</div>
+			<div class="our-facitilities">
+				<div class="facility-content">
+					<div class="facility">
+						<div class="icon-image">
+							<img src="./img/icon (4).svg" alt="" />
+						</div>
+						<div class="facility-title">Mobile shopping</div>
+						<div class="facility-detail">
+							Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo
+							eleifend Aliquam sem conubia
+						</div>
+					</div>
+				</div>
+				<div class="facility-content">
+					<div class="facility">
+						<div class="icon-image">
+							<img src="./img/icon (5).svg" alt="" />
+						</div>
+						<div class="facility-title">Secure payments</div>
+						<div class="facility-detail">
+							Mauris fringilla sem laoreet urna. Nunc elementum. Phasellus
+							ultrices, dui tellus, elementum vel
+						</div>
+					</div>
+				</div>
+				<div class="facility-content">
+					<div class="facility">
+						<div class="icon-image">
+							<img src="./img/icon (6).svg" alt="" />
+						</div>
+						<div class="facility-title">Present packaging</div>
+						<div class="facility-detail">
+							Proin ultricies lobortis, varius eu, purus. Phasellus laoreet
+							ligula at, consequat diam silacis
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="forth-section-title" id="exclusive">
+				Exclusive brands in our store
+			</div>
+			<div class="brands">
+				<div class="brand-names"><img src="./img/brands.svg" alt="" /></div>
+				<div class="brand-names"><img src="./img/brands (2).svg" alt="" /></div>
+				<div class="brand-names"><img src="./img/brands (3).svg" alt="" /></div>
+				<div class="brand-names"><img src="./img/brands (4).svg" alt="" /></div>
+				<div class="brand-names"><img src="./img/brands (5).svg" alt="" /></div>
+			</div>
+		</div>
 
-         <!-- ...........................Sixth Section........................ -->
+		<!-- ...........................eighth Section........................ -->
 
-         <div class="seventh-section">
-            <div class="forth-section-title" id="">We offers you convenient
-               <br> shopping experience at any scale
-            </div>
-            <div class="our-facitilities">
-                <div class="facility-content">
-                    <div class="facility">
-                        <div class="icon-image"><img src="./img/icon (4).svg" alt=""></div>
-                        <div class="facility-title">Mobile shopping</div>
-                        <div class="facility-detail">Vitae adipiscing tu enean ligula nibhmolestie id viverra dapilo eleifend Aliquam sem conubia</div>
-                    </div>
-                </div>
-                <div class="facility-content">
-                    <div class="facility">
-                        <div class="icon-image"><img src="./img/icon (5).svg" alt=""></div>
-                        <div class="facility-title">Secure payments</div>
-                        <div class="facility-detail">Mauris fringilla sem laoreet urna. Nunc elementum. Phasellus ultrices, dui tellus, elementum vel</div>
-                    </div>
-                </div>
-                <div class="facility-content">
-                    <div class="facility">
-                        <div class="icon-image"><img src="./img/icon (6).svg" alt=""></div>
-                        <div class="facility-title">Present packaging</div>
-                        <div class="facility-detail">Proin ultricies lobortis, varius eu, purus. Phasellus laoreet ligula at, consequat diam silacis</div>
-                    </div>
-                </div>
-            </div>     
-            <div class="forth-section-title" id="exclusive">Exclusive brands in our store</div>
-            <div class="brands"> 
-                <div class="brand-names"><img src="./img/brands.svg" alt=""></div>
-                <div class="brand-names"><img src="./img/brands (2).svg" alt=""></div>
-                <div class="brand-names"><img src="./img/brands (3).svg" alt=""></div>
-                <div class="brand-names"><img src="./img/brands (4).svg" alt=""></div>
-                <div class="brand-names"><img src="./img/brands (5).svg" alt=""></div>
-        </div>
-           
-            
+		<div class="eightth-section">
+		 <div class="eightth-section-content">
+			 <div class="eightth-section-parts" id="eightth-section-part-one">
+				<div class="eightth-section-part-title"><h1>Pellentesque imperdiet enim <br>eget velit justo, dictum,    <br>habitant.</h1></div>
+				<div class="paragraph">Gravida id in cras in faucibus. Quis rhoncus dignissim leo, velit, pharetra duis lacus fames morbi. Odio potenti congue commodo, feugiat ultrices. Vitae duis massa nisl pellentesque vitae et, nisi amet, lectus. Massa aliquet felis non nisl.</div>
+			 </div>
+			 <div class="eightth-section-parts">
+				<div class="eightth-section-part-title">About the be shop</div>
+				<div class="paragraph">Metus libero nec nisi nibh bibendum curabitur ante bibendum curabitur dictumst magna nam ligula vestibulum curabitur dapibus lacinia potenti sagittis est iaculis mauris vel conubia placerat vulputate auctor elementum mattis lacus</div>
+			 </div>
+			 <div class="eightth-section-parts">
+				<div class="eightth-section-part-title">Our Journey</div>
+				<div class="paragraph">Pretium est donec quis at feugiat semper euismod dignissim aliquam vestibulum. Commodo consectetur leo senectus mollis praesent. Mus interdum dolor imperdiet dis malesuada. Facilisi senectus lobortis congue neque egestas.</div>
+			 </div>
+		</div>
+		</div>
 
-        
-        </div>   
-        </div>
+		<!-- ...........................eighth Section........................ -->
 
-    </body>
-
+		<div class="newsletter"></div>
+	</body>
 </html>
