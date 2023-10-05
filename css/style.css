@@ -547,7 +547,7 @@ button a {
   font-size: 28px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .forth-section-product-rating {
@@ -760,7 +760,6 @@ h2 {
   flex-wrap: wrap;
   width: 90%;
   margin: 0px auto;
-  
 }
 
 .facility {
@@ -790,7 +789,6 @@ h2 {
   width: 32%;
 }
 
-
 .facility-title {
   font-size: 26px;
   margin: 10px;
@@ -804,16 +802,16 @@ h2 {
   color: #7a7a7a;
 }
 
-#exclusive{
+#exclusive {
   display: block;
-    margin: 0px auto;
-    padding-bottom: 35px;
-    font-weight: 300;
-    width: 75%;
-    border-bottom: 0.01px solid #d9d9d9;
+  margin: 0px auto;
+  padding-bottom: 35px;
+  font-weight: 300;
+  width: 75%;
+  border-bottom: 0.01px solid #d9d9d9;
 }
 
-.brands{
+.brands {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -821,7 +819,7 @@ h2 {
   justify-content: space-around;
 }
 
-.brand-names{
+.brand-names {
   padding: 10px 5px;
   margin: 15px;
   height: 80px;
@@ -830,110 +828,243 @@ h2 {
   text-align: center;
 }
 
-.brand-names img{
+.brand-names img {
   width: 40%;
 }
-.brand-names:hover{
+.brand-names:hover {
   background: white;
 }
 
 /* ...........................Eightth Section........................ */
 
-.eightth-section-content{
+.eightth-section-content {
   display: flex;
   flex-wrap: wrap;
-  margin: 60px auto;
+  margin: 70px auto;
   width: 90%;
 }
 
-#eightth-section-part-one{
+#eightth-section-part-one {
   width: 400px;
-
 }
 
-.eightth-section-parts{
+.eightth-section-parts {
   padding: 22px;
   margin: 15px;
   height: 225px;
   width: 280px;
 }
 
-#eightth-section-part-one h1{
+#eightth-section-part-one h1 {
   font-size: 30px;
   color: rgb(16%, 15%, 91%);
 }
-.eightth-section-part-title{
+.eightth-section-part-title {
   margin: 16px 0px;
   color: rgb(4%, 10%, 28%);
   font-size: 22px;
   font-weight: 500;
-
 }
 
-.paragraph{
+.paragraph {
   font-size: 17px;
   font-family: "Lato", sans-serif;
   color: rgb(101, 101, 101);
 }
 
-
 /* ...........................form Section........................ */
 
-.newsletter{
+.newsletter {
   background: rgb(13, 13, 13);
   height: 600px;
   font-family: "Ubuntu", sans-serif;
   /* color: white; */
 }
 
-.newsletter img{
-  width: 100%;
-  opacity: .6;
-  
+.newsletter img {
+  width: 1349px;
+  height: 600px;
+  object-fit: fill;
+  opacity: 0.5;
 }
 
-.form-section{
-  position: absolute;
- 
+.form-section {
+  display: block;
+  margin: 0px auto;
+  width: 95%;
 }
 
 .form-on-img {
   display: flex;
   flex-wrap: wrap;
-  margin: -540px 85px;
+  margin: -360px 0px;
   position: absolute;
   z-index: 333;
   color: white;
 }
 
-.form-content h4{
+.form-content {
+  margin-left: 35px;
+}
+
+.form-content h4 {
   font-weight: 100;
   margin: 5px 0px;
 }
-.form-content h1{
+
+.form-content h1 {
   font-size: 40px;
   margin: 5px 0px;
 }
-.options{
+
+.options {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cont{
-  margin: 25px 0px;
-  font-size: 25px;
-  font-weight: 800;
+.cont {
+  margin: 25px 15px;
+  margin-left: 0px;
+  font-size: 22px;
 }
-.cont i{
+
+.cont i {
   color: rgb(16%, 15%, 91%);
 }
 
-#newsletter-form{
+#newsletter-form {
   display: block;
-  margin: -120px auto;
-  height: 350px;
-  width: 610px;
+  margin: -120px 0px;
+  margin-left: 170px;
+  height: 370px;
+  width: 580px;
   border-radius: 20px;
   background: white;
+}
 
+.newsletter-head {
+  padding: 45px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bolder;
+  color: rgb(4%, 10%, 28%);
+}
+
+input {
+  display: block;
+  margin: 12px auto;
+  width: 80%;
+  padding: 12px 5px;
+  color: black;
+  border: 1px solid #858585;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #8a8787;
+}
+
+#subscribe-btn {
+  display: block;
+  margin: 45px auto;
+  width: 81%;
+}
+
+/* ...........................footer Section........................ */
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  margin: 70px auto;
+  margin-bottom: 0px;
+  width: 85%;
+  border-bottom: 1px solid #d7d1d1;
+  justify-content: space-between;
+}
+
+#footer-contact-adjust {
+ 
+  margin-right: 100px;
+  align-items: center;
+}
+
+#footer-contact-adjust:hover {
+};
+
+
+#footer-menu-logo-adjust {
+  margin: 10px;
+  border-right: 1px solid #d7d7d7;
+}
+
+#footer-menu-logo-adjust i {
+  font-size: 45px;
+  padding: 5px;
+  border-left: #787878;
+}
+
+#footer-contact-title-adjust {
+  margin: 5px;
+  margin-left: 0px;
+  color: rgb(16%, 15%, 91%);
+  font-size: 22px;
+}
+
+#footer-contact-title-sec-menu-adjust {
+  margin: 5px;
+  margin-left: 0px;
+  font-size: 35px;
+  color: #363636;
+}
+.footer-address {
+  margin: 22px auto;
+}
+.footer-social-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-media {
+  margin: 18px;
+  margin-left: 0px;
+  font-size: 35px;
+}
+.social-media a {
+  color: #282828;
+}
+
+.footer-section-title {
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: rgb(16%, 15%, 91%);
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content ul li {
+  margin-bottom: 18px;
+}
+
+.footer-content ul li a {
+  color: #383838;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.footer-content ul li a:hover {
+  color: rgb(16%, 15%, 91%);
+}
+
+.copyright{
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-three-content{
+  display: flex;
+  flex-wrap: wrap;
 }
