@@ -1,0 +1,34 @@
+
+@media screen and (max-width:1000px) {
+    .feel-the-sound {
+        position: absolute;
+        margin: 90px 40px;
+        
+    }
+ }
+
+@media screen and (max-width:1040px) {
+    #contact-menu{
+     display: none;
+       }
+   
+ }
+
+@media screen and (max-width:1144px) {
+    .nav-3{
+     display: none;
+       }
+    #menu{
+       
+        visibility: visible;
+    }   
+   
+  }
+
+
+  @media screen and (max-width: 1300px){
+    #first-btn {
+        display: none;
+    }
+  
+  }

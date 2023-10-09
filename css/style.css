@@ -108,6 +108,12 @@
   justify-content: space-between;
 }
 
+#menu {
+  font-size: 28px;
+  margin: 7px 0px;
+  visibility: hidden;
+}
+
 .search-bar {
   margin: 0px 0px;
   padding: 5px;
@@ -123,7 +129,7 @@
   padding: 11px 35px;
   font-size: 15px;
   border-radius: 5px;
-  width: 32rem;
+  width: 38vw;
   border: 1px solid rgb(209 209 209);
   box-sizing: border-box;
 }
@@ -210,9 +216,15 @@ input:focus {
 }
 
 .nav-3-menu ul li a {
+  display: flex;
   text-decoration: none;
   font-size: 18px;
   color: rgba(2, 2, 42, 0.863);
+  align-items: center;
+}
+
+.nav-3-menu ul li a i {
+  margin: 5px;
 }
 
 .nav-3-menu ul li a:hover {
@@ -235,6 +247,7 @@ input:focus {
 }
 
 #nav-3-icon {
+  margin: 5px;
   font-size: 150px;
   opacity: 0.05;
 }
@@ -297,8 +310,8 @@ input:focus {
 .section-btn {
   position: absolute;
   font-size: 16px;
-  width: 140px;
-  height: 45px;
+  padding: 10px 20px;
+  color: white;
   margin: 5px;
   font-weight: bold;
   background: rgb(16%, 15%, 91%);
@@ -307,18 +320,16 @@ input:focus {
   cursor: pointer;
 }
 
-button a {
-  color: white;
+.section-btn a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  text-decoration: none;
 }
 
 .section-btn:hover {
   background: rgb(22, 18, 232);
 }
 .section-photo img {
-  position: fixed;
+  position: absolute;
   padding: 40px;
   width: 150px;
 }
@@ -385,13 +396,15 @@ button a {
 }
 
 .btn {
+  display: inline-block;
+  padding: 10px 22px;
   font-size: 16px;
-  width: 140px;
-  height: 45px;
+  /* width: 140px; */
+  /* height: 45px; */
   margin: 5px;
-  font-weight: bold;
+  font-weight: 500;
   background: rgb(16%, 15%, 91%);
-  border-radius: 10px;
+  border-radius: 5px;
   border-style: none;
   cursor: pointer;
   color: white;
@@ -400,9 +413,10 @@ button a {
 .btn:hover {
   background: rgb(21, 17, 240);
 }
-#fist-btn {
+#first-btn {
   position: absolute;
-  margin: -264px 900px;
+  margin: -265px 900px;
+  width: 5%;
   font-family: "Plus Jakarta Sans";
 }
 
@@ -514,6 +528,7 @@ button a {
   flex-wrap: wrap;
   margin: 25px auto;
   width: 96%;
+  justify-content: center;
 }
 .product {
   width: 364px;
@@ -601,7 +616,7 @@ button a {
 
 .offer-time {
   display: flex;
-  margin: 30px;
+  margin: 30px 0px;
 }
 .time-container {
   display: block;
@@ -654,6 +669,7 @@ button a {
   margin: 290px 20px;
   margin-bottom: 0px;
   position: absolute;
+  justify-content: start;
 }
 
 #product-3rd {
@@ -698,12 +714,13 @@ button a {
   flex-wrap: wrap;
   width: 90%;
   margin: 0px auto;
+  justify-content: center;
 }
 .sixth-section-boxes {
   position: relative;
   margin: 18px;
   height: 270px;
-  width: 570px;
+  width: 42%;
   border-radius: 15px;
   background: rgb(97%, 97%, 97%);
 }
@@ -732,20 +749,18 @@ h2 {
 
 .section-box-content {
   margin: 10px;
-  width: 300px;
-  align-items: center;
+  width: 45%;
 }
 
 #section-box-content {
-  height: 220px;
-  width: 220px;
+  width: 45%;
   background-color: white;
-  border-radius: 15px;
 }
 
 .section-box-content img {
-  margin: 10px auto;
+  margin: 0px auto;
   width: 100%;
+  border-radius: 15px;
 }
 
 /* ...........................Seventh Section........................ */
@@ -760,6 +775,7 @@ h2 {
   flex-wrap: wrap;
   width: 90%;
   margin: 0px auto;
+  justify-content: center;
 }
 
 .facility {
@@ -875,6 +891,7 @@ h2 {
 /* ...........................form Section........................ */
 
 .newsletter {
+  position: relative;
   background: rgb(13, 13, 13);
   height: 600px;
   font-family: "Ubuntu", sans-serif;
@@ -882,29 +899,29 @@ h2 {
 }
 
 .newsletter img {
-  width: 1349px;
+  position: absolute;
+  width: 100%;
   height: 600px;
-  object-fit: fill;
+  object-fit: cover;
   opacity: 0.5;
 }
 
 .form-section {
   display: block;
-  margin: 0px auto;
-  width: 95%;
+  position: absolute;
+  margin: 130px 56px;
+  width: 90%;
 }
 
 .form-on-img {
   display: flex;
   flex-wrap: wrap;
-  margin: -360px 0px;
-  position: absolute;
-  z-index: 333;
   color: white;
+  justify-content: space-between;
 }
 
 .form-content {
-  margin-left: 35px;
+  margin-top: 90px;
 }
 
 .form-content h4 {
@@ -934,10 +951,9 @@ h2 {
 
 #newsletter-form {
   display: block;
-  margin: -120px 0px;
-  margin-left: 170px;
   height: 370px;
-  width: 580px;
+  width: 50%;
+  margin-top: 0px;
   border-radius: 20px;
   background: white;
 }
@@ -945,23 +961,23 @@ h2 {
 .newsletter-head {
   padding: 45px;
   text-align: center;
-  font-size: 35px;
+  font-size: 2rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bolder;
   color: rgb(4%, 10%, 28%);
 }
 
-input {
+.name input {
   display: block;
   margin: 12px auto;
-  width: 80%;
+  width: 35vw;
   padding: 12px 5px;
   color: black;
   border: 1px solid #858585;
   border-radius: 8px;
 }
 
-input::placeholder {
+.name input::placeholder {
   font-size: 16px;
   color: #8a8787;
 }
@@ -969,7 +985,7 @@ input::placeholder {
 #subscribe-btn {
   display: block;
   margin: 45px auto;
-  width: 81%;
+  width: 36vw;
 }
 
 /* ...........................footer Section........................ */
@@ -986,14 +1002,12 @@ input::placeholder {
 }
 
 #footer-contact-adjust {
- 
   margin-right: 100px;
   align-items: center;
 }
 
 #footer-contact-adjust:hover {
-};
-
+}
 
 #footer-menu-logo-adjust {
   margin: 10px;
@@ -1059,12 +1073,12 @@ input::placeholder {
   color: rgb(16%, 15%, 91%);
 }
 
-.copyright{
+.copyright {
   padding: 15px;
   text-align: center;
 }
 
-.footer-three-content{
+.footer-three-content {
   display: flex;
   flex-wrap: wrap;
 }
