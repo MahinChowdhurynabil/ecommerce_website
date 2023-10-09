@@ -102,6 +102,13 @@
   margin-bottom: 5px;
 }
 
+.right-nav {
+  display: flex;
+}
+
+.left-nav {
+  display: flex;
+}
 .search-menu {
   display: flex;
   flex-wrap: wrap;
@@ -422,14 +429,13 @@ input:focus {
 
 .second-section {
   display: flex;
-  flex-wrap: wrap;
   margin: 0px auto;
   width: 91%;
   justify-content: space-evenly;
 }
 .service-highlight {
   text-align: center;
-  margin: 24px;
+  padding: 15px;
   color: rgba(2, 2, 42, 0.845);
   cursor: pointer;
 }
@@ -441,7 +447,7 @@ input:focus {
 
 .service-highlight-title {
   font-size: 22px;
-  margin: 5px;
+  margin: 5px 0px;
 }
 
 .service-highlight-tag {
@@ -622,8 +628,8 @@ input:focus {
   display: block;
   padding: 20px;
   margin: 12px;
-  width: 100px;
-  height: 59px;
+  width: 60px;
+  height: 60px;
   background: #ffffff1f;
   border-radius: 20px;
 }
@@ -718,9 +724,9 @@ input:focus {
 }
 .sixth-section-boxes {
   position: relative;
-  margin: 18px;
-  height: 270px;
-  width: 42%;
+  margin: 10px;
+  height: 280px;
+  width: 48%;
   border-radius: 15px;
   background: rgb(97%, 97%, 97%);
 }
@@ -742,6 +748,7 @@ h2 {
 }
 .section-box {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   align-items: center;
   padding-top: 18px;
@@ -829,7 +836,6 @@ h2 {
 
 .brands {
   display: flex;
-  flex-wrap: wrap;
   width: 90%;
   margin: 20px auto;
   justify-content: space-around;
@@ -921,6 +927,7 @@ h2 {
 }
 
 .form-content {
+  width: 50%;
   margin-top: 90px;
 }
 
