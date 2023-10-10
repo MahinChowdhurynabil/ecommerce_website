@@ -1,4 +1,21 @@
+@media screen and (max-width: 480px) {
+  .product-feature {
+    height: 27rem;
+  }
+  .name input {
+    width: 65vw;
+  }
+
+  #subscribe-btn {
+    width: 67vw;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  .dishead p {
+    font-size: 16px;
+  }
+
   .nav-1 {
     display: none;
   }
@@ -53,13 +70,24 @@
     justify-content: space-evenly;
     margin: 30px;
   }
+  .forth-section-title {
+    padding: 80px 20px;
+    font-size: 28px;
+  }
+  .fifth-section {
+    background-size: cover;
+    height: 1100px;
+    overflow-x: visible;
+    background-position: center;
+  }
 
   .form-section {
-    margin: 40px 55px;
+    margin: 40px 25px;
     width: 90%;
   }
   .form-content {
-    width: 51%;
+    width: 415px;
+    margin-top: 0px;
   }
   .form-on-img {
     margin-top: 0px;
@@ -73,7 +101,11 @@
     /* margin: 5px 225px; */
   }
 
+  .section-slogan br {
+    display: none;
+  }
   .form-on-img {
+    background-position: center;
     justify-content: center;
   }
   .newsletter-head {
@@ -84,7 +116,38 @@
   #newsletter-form {
     margin-top: 15px;
     height: 300px;
-    width: 50%;
+    width: 415px;
+  }
+
+  .brands {
+    flex-wrap: wrap;
+  }
+  .brand-names {
+    padding: 10px 0px;
+    margin: 0px;
+    width: 180px;
+  }
+  .footer-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-social-media {
+    justify-content: center;
+  }
+
+  #footer-contact-title-adjust {
+    margin-left: -30px;
+    font-size: 16px;
+  }
+  #footer-contact-title-sec-menu-adjust {
+    font-size: 26px;
+  }
+  #footer-menu-detail-adjust {
+    display: block;
+  }
+  .footer-content {
+    text-align: center;
+    width: 60%;
   }
 }
 
@@ -97,13 +160,29 @@
   }
   .feel-the-sound {
     position: absolute;
-    margin: 90px 40px;
+    margin: 50px 40px;
+  }
+  #fifth-section-products {
+    margin: 150px 20px;
   }
 
   .sixth-section-boxes {
-    height: 250px;
+    height: 360px;
+    width: 400px;
+    text-align: -webkit-center;
+  }
+  h2 {
+    font-size: 22px;
   }
 
+  .section-box {
+    flex-direction: column-reverse;
+  }
+
+  .section-box-content {
+    margin: 10px;
+    width: 100%;
+  }
   #footer-contact-adjust {
     margin-right: 25px;
   }
