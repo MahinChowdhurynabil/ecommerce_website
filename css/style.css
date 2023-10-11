@@ -230,6 +230,9 @@ input:focus {
   align-items: center;
 }
 
+#active-link {
+  color: rgb(16%, 15%, 91%);
+}
 .nav-3-menu ul li a i {
   margin: 5px;
 }
@@ -1018,8 +1021,8 @@ h2 {
   align-items: center;
 }
 
-#footer-contact-adjust:hover {
-}
+/* #footer-contact-adjust:hover {
+} */
 
 #footer-menu-logo-adjust {
   margin: 10px;
