@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="./login and reg.css">
-    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/component/login and reg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&family=Ubuntu:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="">
     <title>BeStore</title>
+    <script src="/js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 
 <body>
     <div class="dishead">
-        <p>Like us on Facebook and receive a 20% discount</p>
+        <p class="dishead_p">Like us on Facebook and receive a 20% discount</p>
     </div>
     <div class="navbar">
         <div class="nav-1">
@@ -38,19 +40,19 @@
                             <li><a href="">Overlay Styles<i class="fa-solid fa-chevron-right"></i></a></li>
                         </ul>
                     </li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                    <li><a href="../pages/term-of-use.html">Term of use</a></li>
-                    <li><a href="../pages/wishlist.html">Wishlist</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="/pages/term-of-use.html">Term of use</a></li>
+                    <li><a href="/pages/wishlist.html">Wishlist</a></li>
                 </ul>
             </div>
         </div>
         <div class="nav-2">
             <div class="search-menu">
                 <div class="left-nav">
-                    <i class="fa-solid fa-bars" id="menu"></i>
-                    <a href="../index.html">
-                        <div class="logo"><img src="../img/Logo.svg" alt=""></div>
+                    <div class="active-menu"><i class="fa-solid fa-bars" id="active-menu"></i></div>
+                    <a href="/index.html">
+                        <div class="logo"><img src="/img/Logo.svg" alt=""></div>
                     </a>
                 </div>
 
@@ -65,14 +67,15 @@
                         </div>
                     </div>
                     <div class="menu-login">
-                        <div class="menu-logo"><i class="fa-regular fa-user"></i></div>
+                        <div class="menu-logo"><a href="/component/login.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
                         <div class="menu-detail">
-                            <div class="title"><a href="./login.html">Login</a></div>
-                            <div class="title-sec-menu"><a href="./register.html">or register</a></div>
+                            <div class="title"><a href="/component/login.html">Login</a></div>
+                            <div class="title-sec-menu"><a href="/component/register.html">or register</a></div>
                         </div>
                     </div>
                     <div class="menu-cart">
-                        <a href="./component/cart.html" class="your-cart">
+                        <a href="/component/cart.html" class="your-cart">
                             <div class="menu-logo"><i class="fa-solid fa-cart-shopping"></i></div>
                             <div class="menu-detail">
                                 <div class="title">Your</div>
@@ -88,7 +91,7 @@
             <div class="nav-3-menu">
                 <ul>
                     <li id="sub-nav-3" class="computers">
-                        <a href="./computer.html" class="nav-3-menu-link"><i id="feat" class="fa-solid fa-laptop"></i>
+                        <a href="/computer.html" class="nav-3-menu-link"><i id="feat" class="fa-solid fa-laptop"></i>
                             Computers <i class="fa-solid fa-chevron-down">
                             </i></a>
                         <div class="third-sub-menu" id="computer-sub-menu">
@@ -109,13 +112,12 @@
                                         </div>
                                         <div class="section-btn"><a href="" style="color: white;">Find out</a></div>
                                     </div>
-                                    <div class="section-photo"><img src="../img/products photo/products (1).webp"
-                                            alt="">
+                                    <div class="section-photo"><img src="/img/products photo/products (1).webp" alt="">
                                     </div>
                                 </div>
                             </div>
 
-                    <li id="sub-nav-3" class="smartphones"><a href="./smartphone.html"><i id="feat"
+                    <li id="sub-nav-3" class="smartphones"><a href="/smartphone.html"><i id="feat"
                                 class="fa-solid fa-mobile-screen"></i>
                             SmartPhones <i class="fa-solid fa-chevron-down"></i></a>
                         <div class="third-sub-menu" id="smartphones-sub-menu">
@@ -141,8 +143,7 @@
                                         </div>
                                         <div class="section-btn"><a href="" style="color: white;">Find out</a></div>
                                     </div>
-                                    <div class="section-photo"><img src="../img/products photo/products (6).webp"
-                                            alt="">
+                                    <div class="section-photo"><img src="/img/products photo/products (6).webp" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -172,8 +173,7 @@
                                         </div>
                                         <div class="section-btn"><a href="" style="color: white;">Find out</a></div>
                                     </div>
-                                    <div class="section-photo"><img src="../img/products photo/products (5).webp"
-                                            alt="">
+                                    <div class="section-photo"><img src="/img/products photo/products (5).webp" alt="">
                                     </div>
 
                                 </div>
@@ -181,7 +181,7 @@
                         </div>
                     </li>
 
-                    <li id="sub-nav-3" class="tv"><a href="./tv.html"><i id="feat" class="fa-solid fa-tv"></i> TV/Audio
+                    <li id="sub-nav-3" class="tv"><a href="/tv.html"><i id="feat" class="fa-solid fa-tv"></i> TV/Audio
                             <i class="fa-solid fa-chevron-down"></i></a>
                         <div class="third-sub-menu" id="tv-sub-menu">
                             <div class="sub-menu-section">
@@ -205,8 +205,7 @@
                                         </div>
                                         <div class="section-btn"><a href="" style="color: white;">Find out</a></div>
                                     </div>
-                                    <div class="section-photo"><img src="../img/products photo/products (2).webp"
-                                            alt="">
+                                    <div class="section-photo"><img src="/img/products photo/products (2).webp" alt="">
                                     </div>
 
                                 </div>
@@ -214,7 +213,7 @@
                         </div>
                     </li>
 
-                    <li id="sub-nav-3" class="tables"><a href="./tables.html"><i id="feat"
+                    <li id="sub-nav-3" class="tables"><a href="/tables.html"><i id="feat"
                                 class="fa-solid fa-tablet-screen-button"></i> Tables<i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <div class="third-sub-menu" id="tables-sub-menu">
@@ -237,8 +236,7 @@
                                         </div>
                                         <div class="section-btn"><a href="" style="color: white;">Find out</a></div>
                                     </div>
-                                    <div class="section-photo"><img src="../img/products photo/products (4).webp"
-                                            alt="">
+                                    <div class="section-photo"><img src="/img/products photo/products (4).webp" alt="">
                                     </div>
 
                                 </div>
@@ -272,15 +270,14 @@
                                         </div>
                                         <div class="section-btn"><a href="" style="color: white;">Find out</a></div>
                                     </div>
-                                    <div class="section-photo"><img src="../img/products photo/products (3).webp"
-                                            alt="">
+                                    <div class="section-photo"><img src="/img/products photo/products (3).webp" alt="">
                                     </div>
 
                                 </div>
                             </div>
                     </li>
 
-                    <li id="sub-nav-3" class="view-all"><a href=""><img src="../img/fourcircles_116453.png" alt=""
+                    <li id="sub-nav-3" class="view-all"><a href=""><img src="/img/fourcircles_116453.png" alt=""
                                 class="view-icon" id="feat"> view-all<i class="fa-solid fa-chevron-down"></i></a></li>
                 </ul>
             </div>
@@ -289,21 +286,24 @@
     </div>
     </div>
 
-
     <!-- ..........................login........................ -->
 
-    <div class="login-container">
-        <div class="login-form">
-            <h3 class="login-title">Login</h3>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <a href="">Forget Password?</a>
-            <button class="btn">Login</button>
-            <div class="reg">Don't have account? <a href="./register.html">Register</a></div>
-
-
+    <form action="http://localhost:5501/auth/login" method="post">
+        <div class="login-container">
+            <div class="login-form">
+                <h3 class="login-title">Login</h3>
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="">Forget Password?</a>
+                <button type="submit" class="btn">Login</button>
+                <div class="reg">Don't have account? <a href="./register.html">Register</a></div>
+            </div>
         </div>
-    </div>
+
+    </form>
+
+
+
 
     <!-- ...........................footer-section........................ -->
 

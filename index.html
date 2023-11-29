@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="./css/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +13,10 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&family=Ubuntu:wght@400;500&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="">
 	<title>BeStore</title>
+	<script src="./js/index.js"></script>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 
 <body>
@@ -71,7 +74,7 @@
 						</div>
 					</div>
 					<div class="menu-cart">
-						<a href="./component/cart.html" class="your-cart">
+						<a href="/component/cart.html" class="your-cart">
 							<div class="menu-logo"><i class="fa-solid fa-cart-shopping"></i></div>
 							<div class="menu-detail">
 								<div class="title">Your</div>
@@ -828,47 +831,8 @@
 	<div class="copyright">@2023 Be Store. All rights reserved.</div>
 	</div>
 
-	<!-- ...........................script........................ -->
-	<script>
-
-		document.addEventListener('DOMContentLoaded', function () {
-			let dishead_pElement = document.querySelector('.dishead_p');
-			let texts = ['Like us on Facebook and receive a 20% discount', 'Subscribe our newsletter and get unlimited profits'];
-			let currentIndex = 0;
-
-			function fadeInOut() {
-				dishead_pElement.textContent = texts[currentIndex];
-				dishead_pElement.style.opacity = 1;
-
-				setTimeout(function () {
-					dishead_pElement.style.opacity = 0;
-				}, 1000);
-
-				currentIndex = (currentIndex + 1) % texts.length;
-			}
 
 
-			fadeInOut();
-
-
-			setInterval(fadeInOut, 2000);
-		});
-
-
-
-		document.addEventListener('DOMContentLoaded', function () {
-			let active = document.querySelector('.active-menu');
-			let mobonav = document.querySelector(".nav-3");
-
-			active.onclick = function () {
-				if (mobonav.style.display === "none" || mobonav.style.display === "") {
-					mobonav.style.display = "block";
-				} else {
-					mobonav.style.display = "none";
-				}
-			};
-		});
-	</script>
 </body>
 
 </html>

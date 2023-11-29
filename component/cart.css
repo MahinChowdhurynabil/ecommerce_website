@@ -21,12 +21,16 @@
   justify-content: center;
 }
 .fp {
+  font-weight: 500;
   background: white;
   border: 0.1px solid;
   padding: 14px 20px;
   border-radius: 42px;
 }
-
+#fp1 {
+  color: white;
+  background: rgb(16%, 15%, 91%);
+}
 .fp-name {
   margin: 16px;
 }

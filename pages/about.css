@@ -1,0 +1,72 @@
+.first-containter {
+  display: -webkit-box;
+  margin: 80px auto;
+  width: 85%;
+  -webkit-box-pack: justify;
+}
+
+span {
+  color: rgb(22, 18, 232);
+}
+
+.about-text {
+  margin-top: 20px;
+  color: rgb(4%, 10%, 28%);
+  width: 40vw;
+}
+.text1 {
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.text2 {
+  font-size: 18px;
+  margin: 35px 0px;
+  color: rgb(10 25 71 / 72%);
+}
+
+.about-img img {
+  border-radius: 20px;
+  width: 35vw;
+}
+
+.container-three {
+  background-color: rgb(16%, 15%, 91%);
+}
+
+.two-section {
+  margin: 80px 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-section img {
+  width: 40vw;
+  margin-bottom: 50px;
+}
+
+.for-adjustment {
+  display: block;
+  margin: 0px auto;
+  width: 90%;
+}
+
+.facilities {
+  width: 35vw;
+  color: white;
+  margin: 10px;
+}
+.tit i {
+  margin: 8px;
+  margin-left: 0px;
+}
+.tit {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.dumy {
+  margin: 8px 0px;
+  font-size: 16px;
+}

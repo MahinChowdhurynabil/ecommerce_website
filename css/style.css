@@ -379,7 +379,7 @@ input:focus {
   display: none;
 }
 .smartphones:hover #smartphones-sub-menu {
-  margin-left: -152px;
+  margin-left: -160px;
   display: block;
 }
 
@@ -388,7 +388,7 @@ input:focus {
 }
 
 .watches:hover #watches-sub-menu {
-  margin-left: -325px;
+  margin-left: -342px;
   display: block;
 }
 
@@ -397,7 +397,7 @@ input:focus {
 }
 
 .tv:hover #tv-sub-menu {
-  margin-left: -465px;
+  margin-left: -500px;
   display: block;
 }
 
@@ -406,7 +406,7 @@ input:focus {
 }
 
 .tables:hover #tables-sub-menu {
-  margin-left: -612px;
+  margin-left: -650px;
   display: block;
 }
 
@@ -415,7 +415,7 @@ input:focus {
 }
 
 .games:hover #games-sub-menu {
-  margin-left: -728px;
+  margin-left: -780px;
   display: block;
 }
 
@@ -442,6 +442,7 @@ input:focus {
   border-style: none;
   cursor: pointer;
   color: white;
+  animation-delay: 3s;
 }
 
 .btn:hover {
