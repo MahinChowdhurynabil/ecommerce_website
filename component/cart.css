@@ -1,0 +1,68 @@
+.cart-title {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(4%, 10%, 28%);
+}
+
+.second-cart-seciton {
+  background: rgb(97%, 97%, 97%);
+}
+
+.cart-flow {
+  font-size: 18px;
+  color: rgb(45%, 49%, 53%);
+  font-weight: 100;
+  display: flex;
+  margin: 20px auto;
+  padding: 25px;
+  width: 100%;
+  justify-content: center;
+}
+.fp {
+  background: white;
+  border: 0.1px solid;
+  padding: 14px 20px;
+  border-radius: 42px;
+}
+
+.fp-name {
+  margin: 16px;
+}
+
+.icon-in-cart {
+  margin: 16px 50px;
+  color: rgb(45%, 49%, 53%);
+}
+
+.cart-body {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  border: 1px solid red;
+}
+.cart {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-total {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30%;
+  background: rgb(94%, 94%, 94%);
+}
+.cart-table {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.cart-table-element {
+  color: rgb(30%, 30%, 32%);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 120px;
+  margin-left: 0px;
+}
